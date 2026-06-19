@@ -57,7 +57,6 @@
             background-color: #e57373; /* Soft red/coral */
             color: white;
             position: absolute;
-            /* Initial centering adjustment relative to the container */
             left: calc(50% + 20px); 
         }
     </style>
@@ -75,13 +74,10 @@
         const yesBtn = document.getElementById('yesBtn');
 
         function runAway() {
-            // Get viewport dimensions, leaving a margin so it doesn't go off-screen
             const padding = 100;
             const maxX = window.innerWidth - yesBtn.offsetWidth - padding;
             const maxY = window.innerHeight - yesBtn.offsetHeight - padding;
 
-            // Generate random coordinates within bounds
-            // Ensuring it uses absolute positioning across the screen once it moves
             const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
             const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
 
@@ -91,7 +87,7 @@
         }
 
         function forgiven() {
-            alert("Yay! I love you! ❤️");
+            alert("YAYY, I LOVE LOVE LOVE YOU AND YOU CAN STILL BE MAD AT ME BUT ITS FRIDAY AND I MISS YOU AND I WILL BE BETTER AT BEING NICE BECAUSE I WAS NOT NICE AND IM SORRY OKAY IM DONE HAVE A GREAT DAY AT WORK BYE ❤️");
         }
     </script>
 
